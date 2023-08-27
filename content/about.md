@@ -6,6 +6,7 @@ updated: 2023-08-26
 
 taxonomies:
     tags: []
+template: mypages.html
 ---
 <div class="c">
 
@@ -21,8 +22,8 @@ Specialized in  backend, primarily in Algorithms and Performance, and secondaril
 Previous work includes 
 - implementing Resource Constrained Project Scheduling algorithms from research papers and improving on them, together with implementing a UI for clients to use; 
 - modifying LLVM to make LTO more friendly for toolchains; 
-- writing data pipelines to analyse revenue data from advertisers; 
-- helping design an in house domain specific language; 
+- writing queries to analyse revenue data from advertisers;
+- Chatbot to help diagnose code issues faster
 - Analyzing an embedded operating system written in rust for unsafe code and exploits;
 
 Teaching is also one of my skills and interests. I was a teaching assistant for algorithms at MIT for 3 semesters, with ratings equal or above 6.5/7, as well as the main instructor for a month long algorithm course at MIT in January 2019 with ratings 6.4/7. I am of the opinion that rapid feedback is of main importance when learning new concepts, and courses should use current tools to do so when possible.  
@@ -193,4 +194,3 @@ I've helped taking care of far too many injured wild animals while I lived in Br
 I've also had previous blogs:
 
 -   [Ivan - Science Olympiads ](https://olimpiadascientificas.org/vida-de-olimpico/ivan.olimpiadascientificas.com/index.html) In portuguese
-

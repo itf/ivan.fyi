@@ -19,16 +19,18 @@ I am a Software Engineer at Google Cambridge, previously Head of Algorithms at R
 
 Master of Engineering in Computer Science, from MIT, with a degree in Computer Science and Electrical Engineering, and Mathematics also from MIT. 
 
-Specialized in  backend, primarily in Algorithms and Performance, and secondarily in Systems and Toolchains, but I have also worked with user interfaces and data visualization tools. 
+I've worked primarily in Algorithms and Performance, and secondarily in Systems and Toolchains, but I have also worked with user interfaces and data visualization tools. 
 
 Previous work includes 
 - implementing Resource Constrained Project Scheduling algorithms from research papers and improving on them, together with implementing a UI for clients to use; 
 - modifying LLVM to make LTO more friendly for toolchains; 
-- writing data pipelines to analyse revenue data from advertisers; 
-- helping design an in house domain specific language; 
+- writing queries to analyse revenue data from advertisers;
+- Chatbot to help diagnose code issues faster
 - Analyzing an embedded operating system written in rust for unsafe code and exploits;
 
 Originally from Brazil, which I represented in multiple International Science Olympiads. IPhO and IJSO gold medalist, IOAA, IOL, WoPhO and OIaB Silver medalist. 
+
+I am a jack of all trades, constantly learning about new areas so I can better interface with people. My background competing in physics, biology, linguistics, astronomy and mathematics 
 
 You can learn more about me on my [About](about.md) page, check my [resume](resume.md), or  contact me on ivanaf @ alum . mit . edu.
 

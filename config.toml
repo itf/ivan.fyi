@@ -1,11 +1,11 @@
 # do NOT include a trailing slash on the base URL
-base_url = "https://abridge.netlify.app"
+base_url = "/"
 
 #base_url = "/home/jieiku/.dev/abridge/public" # Usable site directly from disk, Including Search!
 # Also set index_format = "elasticlunr_javascript", and in [extra] uglyurls = true, integrity = false, js_bundle = false
 
 title = "Ivan.fyi"
-description = "Abridge is a fast and lightweight Zola theme using semantic html, abridge.css class-light CSS, and No Mandatory JS."
+description = "Ivan Tadeu Ferreira Antunes Filho, software engineer in Cambridge, Massachussets, Boston Area"
 default_language = "en"
 
 compile_sass = true
@@ -22,10 +22,11 @@ local_markdown_link = true
 
 #feed_filename = "atom.xml"
 #output_dir = "public"
-ignored_content = ["*.{graphml,xlsx}", "temp.*", ".obsidian/*"]
+ignored_content = ["*.{graphml,xlsx}", "temp.*", "*obsidian/*.json"]
 #hard_link_static = false # set to true to hard link instead of copying, useful for very large files.
 
 theme = "abridge"
+preserve_dotfiles_in_output = true
 
 # Any Extra language you do not use, delete or comment out the extra language sections:
 #[languages.fr]
@@ -77,7 +78,7 @@ include_content = true      # include rendered content of page/section in index
 highlight_code = true
 highlight_theme = "css"
 render_emoji = false
-external_links_target_blank = true # rel="noopener"
+external_links_target_blank = false # rel="noopener"
 external_links_no_follow = false   # rel="nofollow"
 external_links_no_referrer = false # rel="noreferrer"
 smart_punctuation = false          # `...` to `…`, `"quote"` to `“curly”` etc
@@ -155,11 +156,11 @@ foothr = true # show or hide horizontal rule above footer
 title_separator = "|"  # Separator between title and title_addition, set as |, -, _, etc
 title_addition = "Ivan" # a default value for title addition
 author = "Ivan Tadeu Ferreira Antunes Filho" # Put Your Name here
-keywords = "Abridge, Abridge.css, Zola, Theme, Zola Theme, getzola, Semantic Html, Fast, lightweight" # used for the primary site index
+keywords = "Ivan Tadeu Ferreira Antunes Filho, Ivan Antunes Filho, Software Engineer, Backend, Rust, Scala, Elisp" # used for the primary site index
 #banner = "banner.png" # Used as default image for OpenGraph/Twitter if page specific image is undefined.
 #twitter_meta = "your-user-name" # for SEO: twitter:site and twitter:creator
-google = "Your Google Site verification code."
-bing = "Your Bing Site verification code."
+#google = "Your Google Site verification code."
+#bing = "Your Bing Site verification code."
 seo = true  # enable or disable seo-related meta tags: opengraph, facebook, twitter
 #dev = false # development mode, if true then robots.txt should prevent search indexing.
 
@@ -179,7 +180,7 @@ mail = "itadeufa@gmail.com"
 #discord = "your-discord" # Everything after https://discord.com/   eg: invite/my-server  *or*  servers/my-server-id
 #twitter = "your-user-name"
 #facebook = "your-user-name"
-linkedin = "your-user-name"
+linkedin = "ivan-tadeu-ferreira-antunes-filho-8b2b0950"
 #gitlab = "your-user-name"
 github = "itf"
 #codeberg = "your-user-name" # Everything after https://codeberg.org/   eg: username  *or*  username/repository
@@ -232,7 +233,7 @@ search_library = 'elasticlunr'
 
 stylesheets = ["abridge.css"]
 
-pwa = true # true to load the service worker
+pwa = false # true to load the service worker
 webmanifest = "manifest.json" # Required for PWAs
 
 ###############################################################################
@@ -257,7 +258,7 @@ favicon16 = "favicon-16x16.png" # favicon-16x16.png
 ###############################################################################
 
 ### To disable any of these icons set them to "false" (will default to unicode icons instead)
-#icon_search = "svgs search" # Search button in search box.
+icon_search = false # Search button in search box.
 #icon_adjust = "svgs adjust" # Theme Switcher button in top menu. (add class svgh to change colors on hover)
 #icon_first = "svgs svgh angll" # Pagination First Page.
 #icon_prev = "svgs svgh angl" # Pagination Previous Page.

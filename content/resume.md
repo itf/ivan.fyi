@@ -4,6 +4,7 @@ title: Resume
 date: 2018-09-09
 updated: 2022-07-22
 tags:
+template: mypages.html
 ---
 
 This resume is a bit out out-of-date.

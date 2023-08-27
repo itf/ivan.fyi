@@ -11,11 +11,9 @@
             "id": "c1900c647fd6ddaa",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "video",
               "state": {
-                "file": "_index.md",
-                "mode": "source",
-                "source": false
+                "file": "mp4/video-1545707561.mp4"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_index.md",
+                "file": "mp4/video-1545707561.mp4",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_index.md",
+                "file": "mp4/video-1545707561.mp4",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_index.md"
+                "file": "mp4/video-1545707561.mp4"
               }
             }
           }
@@ -148,32 +146,41 @@
   },
   "active": "c1900c647fd6ddaa",
   "lastOpenFiles": [
-    "about.md",
+    "gif/Screencast-2019-05-25T054725-0400.gif",
+    "gif/Screencast-2019-05-24T044159-0400.gif",
+    "jpg/15934143606084917640x640.jpg",
+    "jpg/15959135050940754640x640.jpg",
+    "jpg/15934143438411355640x640.jpg",
+    "jpg/15934142988490329640x640.jpg",
+    "jpg/15934142632760541640x640.jpg",
+    "jpg/15748349119110804640x640.jpg",
+    "jpg/15748347656123629640x640.jpg",
+    "jpg/16004082860554037.jpg",
+    "jpg/15960021873952305.jpg",
     "_index.md",
-    "archive/_index.md",
-    "jpg/IMG_2359~2.jpg",
-    "portfolio.md",
-    "a_game_from_the_past.md",
-    "animating_gifs_in_orgmode.md",
-    "baby_white-woodpeckers_are_dumb.md",
-    "winding_number_in_geometric_algebra.md",
-    "trying_mobile_static_blog_generator.md",
-    "transfer_functions_in_python.md",
-    "the_first_of_many_brazilian-science-olympiads-guide_websites.md",
-    "some_intuition_for_geometric_algebra_product_contractions_and_expansions.md",
-    "simple_proof_weak_master_theorem.md",
-    "solving_a_problem_set_with_orgmode.md",
-    "scan_notes_with_webcam_online_incomplete.md",
-    "scan_notes_with_laptop_webcam.md",
-    "revista_contigo.md",
+    "Ideas.md",
+    "about.md",
     "resume.md",
-    "resetting_oneshot_original_2014_rpgmaker_on_wine_linux.md",
-    "projects_ideas.md",
-    "pão_de_queijo_recipe_brazilian_cheese_bread.md",
-    "organizing_an_iap_class.md",
-    "multi-audio_in_development.md",
-    "mit_entrepreneurship_resources.md",
+    "portfolio.md",
+    "baby_white-woodpeckers_are_dumb.md",
     "me_and_animals.md",
-    "making_zootycoon2_ultimate_edition_run_on_wine_on_ubuntu.md"
+    "export_subtree_with_files.md",
+    "i3wm_screencasting_gifs.md",
+    "emacs_tramp_asking_for_password.md",
+    "code.md",
+    "a_game_from_the_past.md",
+    "groebner_basis_for_linear_network_coding_in_sage.md",
+    "linear_panorama.md",
+    "organizing_an_iap_class.md",
+    "scan_notes_with_webcam_online_incomplete.md",
+    "solving_a_problem_set_with_orgmode.md",
+    "transfer_functions_in_python.md",
+    "projects_ideas.md",
+    "mit_entrepreneurship_resources.md",
+    "disqus_and_javascript_random_thoughts.md",
+    "college_essays_reblog.md",
+    "blogging_past_and_not_blogging_rant.md",
+    "baby_deer.md",
+    "automatic_latex_fragment_toggling_in_org-mode.md"
   ]
 }

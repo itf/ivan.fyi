@@ -87,11 +87,11 @@ In order to not move the camera, you should use a shutter cable, or
 using the [*LCDsensor Remote*](http://wiki.magiclantern.fm/userguide)
 shoot on shooting preferences of Magic Lantern, if you use a canon dlsr.
 
-[![img](./jpg/mural_1.jpg)](./jpg/mural_1.jpg)
+[![img](./jpg/mural_1.jpg))
 
-[![img](./jpg/mural_2.jpg)](./jpg/mural_2.jpg)
+[![img](./jpg/mural_2.jpg))
 
-[![img](./jpg/mural_3.jpg)](./jpg/mural_3.jpg)
+[![img](./jpg/mural_3.jpg))
 
 
 ## Fusing the images
@@ -108,7 +108,7 @@ Macrofusion is a fast, simple and responsive GUI for Enfuse. Macrofusion
 makes it easy to choose the weights of exposure, contrast and saturation
 when fusing the images.
 
-[![img](./jpg/mural_enfused.jpg "Mural enfused ")](./jpg/mural_enfused.jpg)
+[![img](./jpg/mural_enfused.jpg "Mural enfused ")](./jpg/mural_enfused.jpg))
 
 
 ## Straightening the images.
@@ -117,7 +117,7 @@ Open the image in Hugin, and load the lens configuration for your lens.
 
 Choose a rectilinear projection in Hugin's fast preview window.
 
-[![img](./png/hugin_options.png)](./png/hugin_options.png)
+[![img](./png/hugin_options.png))
 
 This should have straightened up the image. But there should still be
 perspective problems. Set the horizon and vertical lines in the control
@@ -130,7 +130,7 @@ Most of the times, Hugin white balance correction in the preview window
 is enough to fix the image colors. And you just need to stitch the
 image.
 
-[![img](./jpg/mural_final.jpg "Mural final ")](./jpg/mural_final.jpg)
+[![img](./jpg/mural_final.jpg "Mural final ")](./jpg/mural_final.jpg))
 
 
 ## Taking the other pictures
@@ -148,7 +148,7 @@ therefore, you should start with a image that would be in the middle and
 then move to the corners. Since this is a tutorial I will stitch only 2
 images.
 
-[![img](./jpg/mural2_final.jpg "Second Mural ")](./jpg/mural2_final.jpg)
+[![img](./jpg/mural2_final.jpg "Second Mural ")](./jpg/mural2_final.jpg))
 
 Load both of the images in Hugin, choosing the type of lens to be
 rectilinear and choose some small value for the focal length, such as
@@ -158,7 +158,7 @@ Set the control points between the images (you can also add lines) and
 choose custom parameters for the geometric optimization. You should
 probably set them by hand.
 
-[![img](./png/hugin_options2.png "Hugin Rectilinear ")](./png/hugin_options2.png)
+[![img](./png/hugin_options2.png "Hugin Rectilinear ")](./png/hugin_options2.png))
 
 All but one picture parameters should be constant, because we are always
 adding one image at a time. For the picture that you are optimizing, you
@@ -202,7 +202,7 @@ stitching to JPG, you should keep the canvas size's dimensions below
 Choose exposure fused from any arrangement, click in calculate optimal
 size if you simply want the largest resolution possible, and stitch!
 
-[![img](./jpg/mural_stitched640x640.jpg)](./jpg/mural_stitched.jpg)
+[![img](./jpg/mural_stitched.jpg))
 <small>
 Mural stitched using only 2 control points</small>
 

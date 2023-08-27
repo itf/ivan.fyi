@@ -4,6 +4,7 @@ title: Portfolio
 date: 2018-09-09
 updated: 2020-07-29
 tags:
+template: mypages.html
 ---
 
 For my resume see [resume](resume.md). 
