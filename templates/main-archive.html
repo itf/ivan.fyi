@@ -1,0 +1,193 @@
+{#
+This Page Shows the Posts Grouped by Year: example.com/archive/
+This Template can also be used as the rendering template for Sections, eg: example.com/blog/  example.com/software/
+#}
+
+{% extends "base.html" %}
+
+{%- block seo %}
+  {{- super() }}
+  {%- set title = "Archive" %}
+
+  {%- if config.title %}
+    {%- set title_addition = title_separator ~ config.title %}
+  {%- else %}
+    {%- set title_addition = "" %}
+  {%- endif %}
+
+  {%- set description = config.description %}
+
+  {{- macros_head::seo(config=config, title=title, title_addition=title_addition, description=description, is_home=true) }}
+{%- endblock seo %}
+
+{%- block content %}
+    {#- The following line is checking if the template is being used for the archive page or a section #}
+    {%- if current_path is matching("^(/[[:alpha:]][[:alpha:]])?/archive/$") %}
+      {%- set sec = "" %}
+    {%- else %}
+      {%- set langpath = "/" %}
+      {%- if lang != config.default_language %}
+        {%- set langpath = "/" ~ lang ~ "/" %}
+      {%- endif %}
+
+      {%- set sec = current_path | trim_start_matches(pat=langpath) | split(pat="/page/") | slice(end=1) | join(sep="") | trim_end_matches(pat="/") %}
+      {%- set sec = sec ~ "/" %}
+    {%- endif %}
+    {%- if lang == config.default_language %}
+    {%- set section_item = get_section(path=sec ~ "_index.md") %}
+    {%- else %}
+    {%- set section_item = get_section(path=sec ~ "_index." ~ lang ~ ".md") %}
+    {%- endif %}
+    {%- if sec != "" %}
+      {#- the section always overrides the config -#}
+      {%- if section_item.extra and 'hide_section_dates' in section_item.extra -%}
+        {%- set hide_section_dates = section_item.extra.hide_section_dates -%}
+      {%- elif config.extra.hide_section_dates -%}
+        {%- set hide_section_dates = true -%}
+      {%- endif -%}
+    {%- endif %}
+    {% set tags = get_taxonomy(kind="tags") %}
+    <div>
+      <div class="c">
+        <h1>{{ tags.items | length }} {%- if lang != config.default_language %} {{ trans(key="Tags" | safe, lang=lang) }} {% else %} Tags {% endif %}</h1>
+        <p>{% for term in tags.items %} #<a href="#{{ term.name }}" class="tag-{{ term.name }} tagindex meta-tag">{{ term.name }}</a><sup>{{ term.pages | length }}</sup> {% endfor %}</p>
+      </div>
+
+      {# {%- if section_item.title %}
+      <h2>{{ section_item.title }}</h2>
+      {%- endif %}
+      {{- section_item.content | safe }}
+      #}
+      {%- for post in section_item.pages %}
+      <article class="dotted-top archive-article{%- if post.taxonomies.tags %} {%- for tag in post.taxonomies.tags %} tag-{{tag}} {%- endfor %} {%- endif %}">
+        <div class="archive-article-title">
+        {{- macros::title_index(page=post, config=config) }}
+        {{- macros::meta_index_archive(page=post, config=config) }}
+        </div>
+        <div class="sum">
+        <p>
+        {%- if post.summary %}
+          {{ post.summary | markdown(inline=true) | safe }}
+        {%- elif post.description %}
+          {{ post.description | safe }}
+        {%- elif post.content %}
+          {{ post.content | striptags | truncate(length=200) | safe }}
+        {%- elif post.extra.static_thumbnail %}
+        {%- endif %}
+          <a href="{{ post.permalink | safe }}">...more</a>
+        </div>
+      </article>
+      {%- endfor %}
+    </div>
+
+<script type="text/javascript">
+const postClass = "archive-article";
+function getAllByClass(tag){
+    return Array.from(document.querySelectorAll("."+tag));
+}
+function getAllPosts(){
+    return getAllByClass(postClass);
+}
+
+function getAllButtons(){
+    return getAllByClass('meta-tag');
+}
+
+
+function getButtonsByTag(tag){
+    return Array.from(document.querySelectorAll('.tag-'+tag +'.meta-tag'));
+}
+
+function getAllFilterItems() {
+    return getAllByClass('tagindex');
+}
+
+function getAllTags(){
+    return getAllFilterItems().map(x=>x.text);
+}
+
+function getActiveTags(){
+    const filterItems = getAllFilterItems();
+    return filterItems.map(
+        x=> {
+        if (x.classList.contains('active'))
+            return x.text
+        }
+    ).filter(x => x!== undefined)
+}
+function getAllClasses(){
+    const allTags = getAllTags();
+    return allTags.map(x => ".tag-"+x);
+}
+function getActiveClasses () {
+    const activeTags = getActiveTags();
+   // if (activeTags.length == 0)
+   //     return getAllClasses();
+   // else
+        return activeTags.map(x=>".tag-" + x);
+}
+function getAllActivePosts(){
+    const activeClasses = getActiveClasses();
+    if (activeClasses.length == 0)
+        return Array.from(getAllPosts());
+    else {
+        const activeSelector = activeClasses.map(x=>"."+postClass+x).join(",");
+        return Array.from(document.querySelectorAll(activeSelector));
+    }
+}
+
+function setVisibilityPosts(){
+    const allPosts = getAllPosts();
+    allPosts.forEach(x=> x.style.display = "none")
+    const activePosts = getAllActivePosts();
+    activePosts.forEach(x=> x.style.display = "")
+}
+
+function addEventListeners(){
+    const buttons = getAllButtons();
+    buttons.forEach(x => x.addEventListener("click", event => {
+        event.preventDefault();
+        return toggleTag(event.target.text)}))}
+
+
+function toggleTag(tag){
+    const buttons = getButtonsByTag(tag);
+    buttons.forEach(x=>x.classList.toggle('active'));
+    setUrlTags();
+    setVisibilityPosts();
+}
+
+function addTag(tag){
+    const buttons = getButtonsByTag(tag);
+    buttons.forEach(x=>x.classList.add('active'));
+}
+
+function setUrlTags() {
+  const tags = getActiveTags();
+  if (tags.length > 0) {
+    history.replaceState(undefined, undefined,  '#' + Array.prototype.join.call(tags, ','))
+  }
+  else
+    history.replaceState(undefined, undefined,  '#')
+}
+
+function getUrlTags() {
+  const hash = document.location.hash.substr(1)
+  if (hash === '') {
+    return []
+  } else{
+    return hash.split(',')
+  }
+}
+
+function enableTags(tags) {
+    tags.forEach(tag=>addTag(tag));
+    setVisibilityPosts();
+}
+
+enableTags(getUrlTags());
+addEventListeners();
+</script>
+{%- endblock content %}
+
+

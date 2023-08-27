@@ -1,0 +1,200 @@
+{
+  "main": {
+    "id": "d84e3293e2581afb",
+    "type": "split",
+    "children": [
+      {
+        "id": "5072151a4cd9c2f1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e09cc3c2927112b7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "a_game_from_the_past.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            },
+            "group": "f8b96f96bf90b553"
+          }
+        ]
+      },
+      {
+        "id": "cc3c2c6062e29610",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8e59438fa3f07432",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "a_game_from_the_past.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
+            },
+            "group": "f8b96f96bf90b553"
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0b0b1f57bf0122d0",
+    "type": "split",
+    "children": [
+      {
+        "id": "8c189a4d40575959",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cfef9d9881a2888a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "af10a608b816240d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "eacc84ed7071305f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "12b0f2e90bf8c3a3",
+    "type": "split",
+    "children": [
+      {
+        "id": "bb73045173166627",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e45854cd73501481",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "a_game_from_the_past.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b209d14e9ca47d49",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "a_game_from_the_past.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5015379717798dcc",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "da438563e6e5404d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "a_game_from_the_past.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "8e59438fa3f07432",
+  "lastOpenFiles": [
+    "-archive-.md",
+    "blogging_past_and_not_blogging_rant.md",
+    "animating_gifs_in_orgmode.md",
+    "disqus_and_javascript_random_thoughts.md",
+    "i3wm_screencasting_gifs.md",
+    "scan_notes_with_webcam_online_incomplete.md",
+    "transfer_functions_in_python.md",
+    "trying_mobile_static_blog_generator.md",
+    "making_zootycoon2_ultimate_edition_run_on_wine_on_ubuntu.md",
+    "journal.md",
+    "hello_world.md",
+    "emacs_drag-drop_pdfs_paste_html_custom_templates.md",
+    "automatic_latex_fragment_toggling_in_org-mode.md",
+    "about.md",
+    "a_game_from_the_past.md",
+    "10_things_to_smell_per_day.md",
+    "portfolio.md",
+    "solving_a_problem_set_with_orgmode.md",
+    "make_cheap_headphones_sound_better_on_linux_-_ubuntu.md",
+    "emacs_tramp_asking_for_password.md",
+    "export_subtree_with_files.md",
+    "contact.md",
+    "college_essays_reblog.md",
+    "code.md",
+    "baby_white-woodpeckers_are_dumb.md",
+    "baby_deer.md"
+  ]
+}
