@@ -1,0 +1,43 @@
+{# This Page Shows the 'Pages' (abridge/content/pages) eg: example.com/about/  example.com/privacy/ #}
+
+{% extends "base.html" %}
+
+{%- block seo %}
+  {{- super() }}
+  {%- set title_addition = "" %}
+
+  {%- if page.title and config.title %}
+    {%- set title = page.title %}
+    {%- set title_addition = title_separator ~ config.title %}
+  {%- elif page.title %}
+    {%- set title = page.title %}
+  {%- else %}
+    {%- set title = config.title %}
+  {%- endif %}
+
+  {%- if page.description %}
+    {%- set description = page.description %}
+  {%- else %}
+    {%- set description = config.description %}
+  {%- endif %}
+
+  {{- macros_head::seo(config=config, title=title, title_addition=title_addition, description=description) }}
+{%- endblock seo %}
+
+{%- block content %}
+    <div>
+
+{{ page.content | safe }}
+
+{#- Updated #}
+          {%- if config.extra.meta_post.updated and page.updated %} {%- if config.extra.icon_date %}<i class="{{ config.extra.icon_date }}"></i> {% endif -%}
+          {%- if lang != config.default_language %} {{ trans(key="Updated" | safe, lang=lang) }}{% else %} Updated{% endif %}:
+          {%- if config.extra.date_locale %}
+          {%- if lang != config.default_language -%}
+            {%- set lang_locale = trans(key="date_locale" | safe, lang=lang) -%}
+          {%- else -%}
+            {%- set lang_locale = config.extra.date_locale -%}
+          {%- endif %} {{ page.updated | date(format="%B %d, %Y", locale=lang_locale) }}
+          {%- else %} {{ page.updated | date(format="%B %d, %Y") }} {%- endif %}{% endif %}
+    </div>
+{%- endblock content %}
