@@ -50,6 +50,7 @@ This Template can also be used as the rendering template for Sections, eg: examp
       <article class="dotted-top archive-article{%- if post.taxonomies.tags %} {%- for tag in post.taxonomies.tags %} tag-{{tag}} {%- endfor %} {%- endif %}">
         <div class="archive-article-title">
         {{- macros::title_index(page=post, config=config) }}
+        <br>>
         {{- macros_extra::meta_index_archive(page=post, config=config, filterout="blog") }}
         </div>
         <div class="sum">

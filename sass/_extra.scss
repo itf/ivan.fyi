@@ -12,12 +12,22 @@ h6 {
 }
 
 h1 a,
+big a,
 h2 a, {
   color:var(--a1);
   font-weight:var(--fh)
 }
 
+h1 a:visited,
+big a:visited,
+h2 a:visited, {
+  color:var(--a1);
+  font-weight:var(--fh)
+}
+
+
 h1 a:hover,
+big a:hover,
 h2 a:hover,
 a.si:hover,
 main nav a:hover,
@@ -30,11 +40,28 @@ nav>div>h1>a {
   color:var(--f1);
 }
 
+nav>div>big>a {
+  color:var(--f1);
+}
+
+nav>div>h1>a:visited {
+  color:var(--f1);
+}
+
+nav>div>big>a:visited {
+  color:var(--f1);
+}
+
+
+
 .dotted-top {
   border-top: dotted 2px rgba(160,160,160,0.3);
 }
 
 .archive-article-title h1{
+  margin-bottom:0em;
+}
+.archive-article-title big{
   margin-bottom:0em;
 }
 .archive-article-title {
