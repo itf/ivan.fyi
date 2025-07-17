@@ -11,7 +11,7 @@ default_language = "en"
 compile_sass = true
 minify_html = true
 build_search_index = true
-generate_feed = true
+generate_feeds = true
 taxonomies = [
     {name = "categories", feed = true},
     {name = "tags", feed = true},
@@ -19,14 +19,18 @@ taxonomies = [
 
 ugly_url = true
 local_markdown_link = true
+#content_as_static = true
 
-#feed_filename = "atom.xml"
+feed_filenames = ["atom.xml"]
 #output_dir = "public"
-ignored_content = ["*.{graphml,xlsx}", "temp.*", "*obsidian/*.json"]
+ignored_content = ["*.{graphml,xlsx}", "temp.*", ".stignore", "*.stfolder","*.obsidian/**", "*.trash/**", "*_templates/**"]
 #hard_link_static = false # set to true to hard link instead of copying, useful for very large files.
 
 theme = "abridge"
 preserve_dotfiles_in_output = true
+
+[slugify]
+anchors = "off"
 
 # Any Extra language you do not use, delete or comment out the extra language sections:
 #[languages.fr]
@@ -105,7 +109,8 @@ flag.fr = "🇫🇷"
 
 menu = [
     {url = "about.html", name = "About", slash = false, blank = false},
-    {url = "archive", name = "Posts", slash = true, blank = false},
+    {url = "archive", name = "Archive", slash = true, blank = false},
+    {url = "blog", name = "Blog", slash = true, blank = false},
     {url = "portfolio.html", name = "Portfolio", slash = false, blank = false},
     {url = "resume.html", name = "Resume", slash = false, blank = false},
     #{url = "categories", name = "Categories", slash = true, blank = false},

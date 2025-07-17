@@ -39,11 +39,14 @@
   $icon-docker: false,
   $icon-stack: false,
   $icon-instagram: true,
+  $icon-pixelfed: false,
   $icon-pinterest: false,
   $icon-discord: false,
   $icon-twitch: false,
   $icon-youtube: false,
+  $icon-peertube: false,
   $icon-researchgate: true,
+  $icon-telegram: false,
 
   //$icon-x: true,// x symbol, used to close search results page.
   //$icon-search: true,//search, spyglass search button in search box.
@@ -53,6 +56,7 @@
   //$icon-angr: true,//pagination, goto next page
   //$icon-angrr: true,//pagination, goto last page
   //$icon-angu: true,//back to top button, appears after scrolling down.
+  //$icon-world: true,//language select menu
   //$icon-copy: true,//copy to clipboard, for code blocks.
 
   //$icon-ffolder: false,
@@ -81,6 +85,7 @@
   $a1d: #6c87be,//#f90,// link color
   $a2d: #7c97ce,//#fb0,// link hover/focus color
   $a3d: #7c97ce,//#f90,// link h1-h2 hover/focus color
+  $a4d: #6c87be,//#f90,// link visited color
   //$cgd: #593,// ins green, success
   //$crd: #e33,// del red, errors
 
@@ -94,6 +99,7 @@
   //$a1: #c40,// link color
   //$a2: #e60,// link hover/focus color
   //$a3: #f90,// link h1-h2 hover/focus color
+  //$a4: #c40,// link visited color
   //$cg: #373,// ins green, success
   //$cr: #d33,// del red, errors
 
@@ -124,14 +130,23 @@
   //$ha: 92%,// mark/highlight line
 
   /// These lines find the spot at which to insert your appended fonts.
-  //$findFont-Main: "Segoe UI",     // ← append custom MAIN font(s) AFTER this
-  //$findFont-Code: "Segoe UI Mono",// ← append custom CODE font(s) AFTER this
+  //$findFont-Main: "Segoe UI",     // ← APPEND custom MAIN font(s) AFTER this
+  //$findFont-Code: "Segoe UI Mono",// ← APPEND custom CODE font(s) AFTER this
+
+  /// If you want to prepend the font list, then use null instead:
+  //$findFont-Main: null,         // ← PREPEND custom MAIN font(s)
+  //$findFont-Code: null,         // ← PREPEND custom CODE font(s)
 
   /// These lines specify the fonts to add.
   //$fontExt-Main: (ExampleFont1, "Example Font 2"),// MAIN font(s) to add
   //$fontExt-Code: (ExampleCode1, "Example Code 2"),// CODE font(s) to add
 
-  /// If prepending/appending fonts above, then no need to change them below
+  /// If relying on installed fonts alone, then the above is all you need, if the visiting system has the intended font installed then it will use it!
+  /// However, if you want to load the Font File resource to ensure it is loaded if they do not have it, then use @use at the VERY Bottom of this file.
+  /// For a Sans based system font stack, I measured the least Cumulative Layout Shift with: Roboto, Lato, Arimo
+
+  /// If prepending/appending fonts above, then no need to change them with the 2 below lines.
+  /// The following 2 below lines give a way to hard code a font list if you prefer.
   //$font: Roboto system-ui -apple-system BlinkMacSystemFont "Segoe UI" Oxygen Ubuntu Cantarell "Fira Sans" "Droid Sans" "Helvetica Neue" "Noto Sans" Helvetica Arial sans-serif,
   //$font-mono: ui-monospace Menlo Monaco Consolas "SF Mono" "Cascadia Mono" "Segoe UI Mono" "DejaVu Sans Mono" "Liberation Mono" "Roboto Mono" "Oxygen Mono" "Ubuntu Monospace" "Ubuntu Mono" "Source Code Pro" "Fira Mono" "Droid Sans Mono" "Courier New" Courier monospace,
 
@@ -173,130 +188,22 @@
   //$form: true,//Form elements (non-button)
   //$top: true,//back to top button using CSS
   //$search: true,//search feature
-  //$toc: true,//Table of Contents, page index / recent posts block
-  //$modifiers: true,//tiny modifier classes for sizing and spacing
+  //$blocks: true,//css classes for block formatting, eg: recent posts, table of contents, series navigation
+  //$series: true,//series navigation list
+  //$modifiers: true,//tiny modifier classes for sizing, spacing, etc.
   //$misc: false,
-  //$grid: false,//Infinity Grid, column based layouts.
+  //$grid: true,//Infinity Grid, column based layouts.
   //$syntax: true,//syntax highlighting for code blocks
+  //$coderoundhighlight: false,//round corners on highlighted code blocks
 );
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-bottom:0.5em;
-  margin-top:0.8em;
-}
-
-h1 a,
-h2 a, {
-  color:var(--a1);
-  font-weight:var(--fh)
-}
-
-h1 a:hover,
-h2 a:hover,
-a.si:hover,
-main nav a:hover,
-nav>div>a:hover {
-  color:var(--a3);
-  text-decoration:underline
-}
-
-nav>div>h1>a {
-  color:var(--f1);
-}
-
-.dotted-top {
-  border-top: dotted 2px rgba(160,160,160,0.3);
-}
-
-.archive-article-title h1{
-  margin-bottom:0em;
-}
-.archive-article-title {
-  margin-bottom:var(--s1);
-}
-
-.meta-tag{
-    padding: 4px 8px;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 1px;
-    font-family: "Open Sans";
-    font-variant: all-small-caps;
-    font-style: normal;
-    letter-spacing: 2px;
-    background-image: none;
-    white-space: nowrap;
-    margin-right: 5px;
-    line-height: 2em;
-}
-
-.tagindex.active{
-    background-color: #334055;
-    color: white;
-}
-
-.pdf-viewer {
-    width: 100%;
-    min-height: 800px;
-}
-
-
-.responsive-table {
-    display:flex;
-    align-items:stretch;
-    flex-wrap:wrap;
-}
-
-/*make text work as separators in the responsive table*/
-.responsive-table p{
-    display: inline;
-    min-width: auto;
-}
-
-@media (max-width: 550px) {
- .responsive-table>div {
-  width:98%
- }
-}
-@media (min-width: 550px) and (max-width: 800px) {
- .responsive-table>div {
-  width:48%
- }
-}
-@media (min-width: 800px) {
- .responsive-table>div {
-  width:32%
- }
-}
-
-
-.portfolio-project {
-    box-shadow:0 7px 15px grey;
-    margin-bottom:1.5em;
-    border-radius:10px;
-    margin-right:1%;
-    padding-left:3%;
-    padding-right:3%;
-    padding-top:5px;
-    padding-bottom: 10px;
-    display:inline-flex;
-    flex-flow: column;
-    flex: auto;
-}
-.project-thumbnail img {
-    width:60%
-}
-.text-center {
-    text-align:center !important
-}
-
-.index-intro img {
-max-width: 25%;
-border-radius: 300px;
-}
-
+@use "extra";
+/******************************************************************************
+ *   FONTS - Abridge by default uses the System Font Stack
+ *     https://css-tricks.com/snippets/css/system-font-stack/
+ *   However if you need you can load a specific font below,
+ *     make sure to have the relevant woff2 fonts in your static/fonts folder
+ *   I measured the least Cumulative Layout Shift with: Roboto, Lato, Arimo
+ *****************************************************************************/
+//@use "fonts/Roboto";
+//@use "fonts/Arimo";

@@ -1,0 +1,123 @@
+/******************************************************************************
+ *   Extra - Put your extra SASS/CSS here, it will get bundled with abridge.css
+ *****************************************************************************/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom:0.5em;
+  margin-top:0.8em;
+}
+
+h1 a,
+h2 a, {
+  color:var(--a1);
+  font-weight:var(--fh)
+}
+
+h1 a:hover,
+h2 a:hover,
+a.si:hover,
+main nav a:hover,
+nav>div>a:hover {
+  color:var(--a3);
+  text-decoration:underline
+}
+
+nav>div>h1>a {
+  color:var(--f1);
+}
+
+.dotted-top {
+  border-top: dotted 2px rgba(160,160,160,0.3);
+}
+
+.archive-article-title h1{
+  margin-bottom:0em;
+}
+.archive-article-title {
+  margin-bottom:var(--s1);
+}
+
+.meta-tag{
+    padding: 4px 8px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 1px;
+    font-family: "Open Sans";
+    font-variant: all-small-caps;
+    font-style: normal;
+    letter-spacing: 2px;
+    background-image: none;
+    white-space: nowrap;
+    margin-right: 5px;
+    line-height: 2em;
+}
+
+.tagindex.active{
+    background-color: #334055;
+    color: white;
+}
+
+.pdf-viewer {
+    width: 100%;
+    min-height: 800px;
+}
+
+
+.responsive-table {
+    display:flex;
+    align-items:stretch;
+    flex-wrap:wrap;
+}
+
+/*make text work as separators in the responsive table*/
+.responsive-table p{
+    display: inline;
+    min-width: auto;
+}
+
+@media (max-width: 550px) {
+ .responsive-table>div {
+  width:98%
+ }
+}
+@media (min-width: 550px) and (max-width: 800px) {
+ .responsive-table>div {
+  width:48%
+ }
+}
+@media (min-width: 800px) {
+ .responsive-table>div {
+  width:32%
+ }
+}
+
+
+.portfolio-project {
+    box-shadow:0 7px 15px grey;
+    margin-bottom:1.5em;
+    border-radius:10px;
+    margin-right:1%;
+    padding-left:3%;
+    padding-right:3%;
+    padding-top:5px;
+    padding-bottom: 10px;
+    display:inline-flex;
+    flex-flow: column;
+    flex: auto;
+}
+.project-thumbnail img {
+    width:60%
+}
+.text-center {
+    text-align:center !important
+}
+
+.index-intro img {
+max-width: 25%;
+border-radius: 300px;
+}
+

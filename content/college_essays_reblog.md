@@ -6,7 +6,7 @@ updated: 2019-11-17
 taxonomies:
     tags: [blog,]
 ---
-This is a reblog from my [old blog](http://olimpiadascientificas.org/vida-de-olimpico/ivan.olimpiadascientificas.com/2013/03/29/i-was-admitted-in-harvard-mit-yale-and-princeton/index.html). The missing college essay that was too personal is the one that was adapted to the <baby_deer.md> post.
+This is a reblog from my [old blog](http://olimpiadascientificas.org/vida-de-olimpico/ivan.olimpiadascientificas.com/2013/03/29/i-was-admitted-in-harvard-mit-yale-and-princeton/index.html). The missing college essay that was too personal is the one that was adapted to the [baby deer](baby_deer.md) post.
 
 [![img](./png/bonecooc.png)](./png/bonecooc.png)
 

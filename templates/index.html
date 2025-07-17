@@ -5,29 +5,6 @@ This Template can also be used as the rendering template for Sections, eg: examp
 
 {%- extends "base.html" %}
 
-{%- block seo %}
-  {{- super() }}
-
-  {%- if config.title %}
-    {%- set title = config.title %}
-  {%- else %}
-    {%- set title = "" %}
-  {%- endif %}
-
-  {%- if config.extra.title_addition and title %}
-    {%- set title_addition = title_separator ~ config.extra.title_addition %}
-  {%- elif config.extra.title_addition %}
-    {%- set title_addition = config.extra.title_addition %}
-  {%- else %}
-    {%- set title_addition = "" %}
-  {%- endif %}
-
-  {%- set description = config.description %}
-
-  {{- macros_head::seo(config=config, title=title, title_addition=title_addition, description=description, is_home=true) }}
-{%- endblock seo %}
-
-
 
 {%- block content %}
     {% set front = get_taxonomy_term(kind="tags", term="main", lang=lang, include_pages=true, required=false) %}

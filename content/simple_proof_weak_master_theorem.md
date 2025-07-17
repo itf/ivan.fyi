@@ -60,7 +60,9 @@ $$ \left(\frac{a}{b^c}\right) < 1$$
 
 You have a geometric series of ratio < 1:
 
-$$n^c \sum_{i=0}^{\log_bn} \left(\frac{a}{b^c}\right)^i \le n^c <br/> \sum_{i=0}^{\infty} \left(\frac{a}{b^c}\right)^i = n^c \frac{1}{1-\left(\frac{a}{b^c}\right)}$$
+$$n^c \sum_{i=0}^{\log_bn} \left(\frac{a}{b^c}\right)^i \le n^c$$
+
+$$ \sum_{i=0}^{\infty} \left(\frac{a}{b^c}\right)^i = n^c \frac{1}{1-\left(\frac{a}{b^c}\right)}$$
 
 And this new term is just a constant
 

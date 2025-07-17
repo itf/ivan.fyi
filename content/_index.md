@@ -1,12 +1,11 @@
 ---
 title: index
 
-date: 2018-09-09
-updated: 2020-09-18
-tags:
-
 paginate_by: 100
 sort_by: "date"
+extra:
+  date: 2018-09-09
+  updated: 2020-09-18
 ---
 <div class="c index-intro">
 
@@ -28,9 +27,11 @@ Previous work includes
 - Chatbot to help diagnose code issues faster
 - Analyzing an embedded operating system written in rust for unsafe code and exploits;
 
-Originally from Brazil, which I represented in multiple International Science Olympiads. IPhO and IJSO gold medalist, IOAA, IOL, WoPhO and OIaB Silver medalist. 
+Originally from Brazil, which I represented in multiple International Science Olympiads. [IPhO](https://ipho-unofficial.org/timeline/2012/individual) and IJSO gold medalist, [IOAA](https://www.gov.br/mast/pt-br/assuntos/noticias/2012/agosto/brasil-encerra-participacao-na-olimpiada-de-astronomia-com-tres-medalhas), IOL, WoPhO and OIaB Silver medalist. 
 
-I am a jack of all trades, constantly learning about new areas so I can better interface with people. My background competing in physics, biology, linguistics, astronomy and mathematics 
+I am a jack of all trades, constantly learning about new areas so I can better interface with people. My background competing in [physics](https://ipho-unofficial.org/timeline/2012/individual), biology, linguistics, astronomy, chemistry, mathematics and informatics, together with graduating in electrical engineering, computer science and mathematics gives me a good interdisciplinary background to approach problems. 
+
+I also have experience helping take care of [multiple types of animals](me_and_animals.md), including armadillos, anteaters, parrots and toucans. My main current hobby is ballroom dancing.
 
 You can learn more about me on my [About](about.md) page, check my [resume](resume.md), or  contact me on ivanaf @ alum . mit . edu.
 

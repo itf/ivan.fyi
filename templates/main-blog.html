@@ -2,9 +2,8 @@
 This Page Shows the Posts Grouped by Year: example.com/archive/
 This Template can also be used as the rendering template for Sections, eg: example.com/blog/  example.com/software/
 #}
-
-{% extends "abridge/templates/archive.html" %}
 {%- import 'macros/extra.html' as macros_extra %}
+{% extends "abridge/templates/archive.html" %}
 
 {%- block content %}
     {#- The following line is checking if the template is being used for the archive page or a section #}
@@ -32,23 +31,26 @@ This Template can also be used as the rendering template for Sections, eg: examp
         {%- set hide_section_dates = true -%}
       {%- endif -%}
     {%- endif %}
-    {% set tags = get_taxonomy(kind="tags") %}
+    
+    {% set blogs = get_taxonomy_term(kind="tags", term="blog") %}
+
+    {% set_global all_tags = [] %}
+    {% set pageTags = blogs.pages | map(attribute="taxonomies.tags") %}
+    {% for tags in pageTags %}
+        {% set_global all_tags = all_tags | concat(with=tags) %}
+    {% endfor %}
+    {% set_global all_tags = all_tags | unique %}
+
     <div>
       <div class="c">
-        <h1>{{ tags.items | length }} {%- if lang != config.default_language %} {{ trans(key="Tags" | safe, lang=lang) }} {% else %} Tags {% endif %}</h1>
-        <p>{% for term in tags.items %} #<a href="#{{ term.name }}" class="tag-{{ term.name }} tagindex meta-tag">{{ term.name }}</a><sup>{{ term.pages | length }}</sup> {% endfor %}</p>
+        <h1>{%- if lang != config.default_language %} {{ trans(key="Tags" | safe, lang=lang) }} {% else %} Tags {% endif %}</h1>
+        <p>{% for term in all_tags %} {%- if term != "blog"%} #<a href="#{{ term }}" class="tag-{{ term }} tagindex meta-tag">{{ term }}</a> {%- endif %} {% endfor %}</p>
       </div>
-
-      {# {%- if section_item.title %}
-      <h2>{{ section_item.title }}</h2>
-      {%- endif %}
-      {{- section_item.content | safe }}
-      #}
-      {%- for post in section_item.pages %}
+      {%- for post in blogs.pages %}
       <article class="dotted-top archive-article{%- if post.taxonomies.tags %} {%- for tag in post.taxonomies.tags %} tag-{{tag}} {%- endfor %} {%- endif %}">
         <div class="archive-article-title">
         {{- macros::title_index(page=post, config=config) }}
-        {{- macros_extra::meta_index_archive(page=post, config=config) }}
+        {{- macros_extra::meta_index_archive(page=post, config=config, filterout="blog") }}
         </div>
         <div class="sum">
         <p>
