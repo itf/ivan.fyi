@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Ivan.fyi - recipe</title>
+    <subtitle>Ivan Tadeu Ferreira Antunes Filho, software engineer in Cambridge, Massachussets, Boston Area</subtitle>
+    <link rel="self" type="application/atom+xml" href="/tags/recipe/atom.xml"/>
+    <link rel="alternate" type="text/html" href="/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2020-09-18T00:00:00+00:00</updated>
+    <id>/tags/recipe/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Pão de queijo recipe (brazilian cheese bread)</title>
+        <published>2020-07-26T00:00:00+00:00</published>
+        <updated>2020-09-18T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="/pao-de-queijo-recipe-brazilian-cheese-bread.html"/>
+        <id>/pao-de-queijo-recipe-brazilian-cheese-bread.html</id>
+        
+        <content type="html" xml:base="/pao-de-queijo-recipe-brazilian-cheese-bread.html">&lt;p&gt;Brazilian cheese bread is a super forgiving recipe: as long as you use tapioca flour and you don&#x27;t underbake it, you can change the ingredients to your hearts content.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;Lazy_recipe&quot;&gt;Lazy recipe&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;about 900g of tapioca flour&#x2F;starch (if you have the option get &quot;polvilho azedo&quot;, i.e. fermented tapioca starch, since it hydrates better). You can buy this at any Brazilian market&lt;&#x2F;li&gt;
+&lt;li&gt;2 cups of milk (hydration. Can be substituted by water)&lt;&#x2F;li&gt;
+&lt;li&gt;half a cup of oil (affects the texture. can be substituted by eggs, or anything)&lt;&#x2F;li&gt;
+&lt;li&gt;2 to 4 eggs (binding. Can be substituted by mashed cassava, mashed potatoes, etc)&lt;&#x2F;li&gt;
+&lt;li&gt;2 big handfuls of cheese (it is only for flavor, so amount is not that important. Can be substituted by anything)&lt;&#x2F;li&gt;
+&lt;li&gt;Some salt for flavor. Around 1 tablespoon is reasonable (depends on the cheese)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Mix everything but the cheese and the tapioca flour.&lt;&#x2F;p&gt;
+&lt;p&gt;Add tapioca flour until you can roll the dough into balls.&lt;&#x2F;p&gt;
+&lt;p&gt;Add the cheese (it doesn&#x27;t change the texture, so it is easier to add it last, to better tell the texture of the dough).&lt;&#x2F;p&gt;
+&lt;p&gt;Roll into balls (they can be tiny, or medium sized). Freeze them for later use, or bake them.&lt;&#x2F;p&gt;
+&lt;p&gt;Bake them until the surface has hardened (it gets a bit brownish), between 350 and 375F. Small ones take 20 minutes, very large ones can take up to 40 minutes.&lt;&#x2F;p&gt;
+&lt;p&gt;If baking a frozen one, add 2 minutes to the time that it took to bake the unfrozen one.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;Slightly_better_recipe&quot;&gt;Slightly better recipe&lt;&#x2F;h1&gt;
+&lt;p&gt;(all substitutions above are still valid)&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;700g of tapioca starch &#x2F; polvilho azedo&lt;&#x2F;li&gt;
+&lt;li&gt;2 cups of milk&lt;&#x2F;li&gt;
+&lt;li&gt;half a cup of oil&lt;&#x2F;li&gt;
+&lt;li&gt;~ some salt (1 tablespoon of salt)&lt;&#x2F;li&gt;
+&lt;li&gt;2 big handfuls of cheese&lt;&#x2F;li&gt;
+&lt;li&gt;4 eggs&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Mix milk, oil and salt and bring it to a boil. Mix 600g of the tapioca, to really hydrate the flower. It will absorb all the milk and will have a nice consistency. Mix cheese. Wait for it to cooldown a bit. Mix the eggs. Roll into balls and freeze or bake  between 350 and 375F, until the surface has hardened.&lt;&#x2F;p&gt;
+&lt;p&gt;If you are making a vegan recipe, I really recommend mixing the tapioca starch onto boiling water, since you won&#x27;t be using eggs as a binding agent.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
