@@ -9,7 +9,7 @@ template: mypages.html
 
 This resume is a bit out out-of-date.
 
-<object id='pdf' data='pdf/resume2022-sep.pdf' type='application/pdf' class='pdf-viewer'>
+<object id='pdf' data='pdf/resume2025-july.pdf' type='application/pdf' class='pdf-viewer'>
   Your browser does not support PDF objects in HTML.<br>
 </object>
 
@@ -22,5 +22,5 @@ This resume is a bit out out-of-date.
 </script>
 <!-- Copyright (c) 2016 Saswat Padhi, The MIT License (MIT).-->
 
-Please download the PDF version [here](pdf/resume2022-sep.pdf).
+Please download the PDF version [here](pdf/resume2025-july.pdf).
 

@@ -25,20 +25,21 @@ template: mypages.html
 
 # Summary
 
-I am a Software Engineer at [Google Cambridge](https://careers.google.com/locations/cambridge/), previously Head of Algorithms at [Radix Labs](https://web.archive.org/web/20220330050525/https://www.radix.bio/), and worked at Facebook, Quantlab, and Indeed.com.  
+I am a Senior Software Engineer at [Google Cambridge](https://careers.google.com/locations/cambridge/), previously Head of Algorithms at [Radix Labs](https://web.archive.org/web/20220330050525/https://www.radix.bio/), and worked at Facebook, Quantlab, and Indeed.com.
 
 Master of Engineering in Computer Science, from MIT, with a degree in Computer Science and Electrical Engineering, and Mathematics also from MIT. 
 
 I've worked primarily in Algorithms and Performance, and secondarily in Systems and Toolchains, but I have also worked with user interfaces and data visualization tools. 
 
 Previous work includes 
+- Adding support for Thin Link Time Optimization to Google's Android Toolchain, resulting in over $50M in savings, 5-7% smaller apps and 5% improvement in performance.
 - implementing Resource Constrained Project Scheduling algorithms from research papers and improving on them, together with implementing a UI for clients to use; 
 - modifying LLVM to make LTO more friendly for toolchains; 
 - writing queries to analyse revenue data from advertisers;
 - Chatbot to help diagnose code issues faster
 - Analyzing an embedded operating system written in rust for unsafe code and exploits;
 
-Originally from Brazil, which I represented in multiple International Science Olympiads. [IPhO](https://ipho-unofficial.org/timeline/2012/individual) and IJSO gold medalist, [IOAA](https://www.gov.br/mast/pt-br/assuntos/noticias/2012/agosto/brasil-encerra-participacao-na-olimpiada-de-astronomia-com-tres-medalhas), IOL, WoPhO and OIaB Silver medalist. 
+Originally from Brazil, which I represented in multiple International Science Olympiads. [IPhO](https://ipho-unofficial.org/timeline/2012/individual) and IJSO gold medalist, [IOAA](https://www.gov.br/mast/pt-br/assuntos/noticias/2012/agosto/brasil-encerra-participacao-na-olimpiada-de-astronomia-com-tres-medalhas), [IOL](https://ioling.org/results/2012), [WoPhO](https://web.archive.org/web/20130807045700/http://www.wopho.org/news-news.php?id=29) and [OIaB](https://olimpiadadebiologia.edu.es/wp-content/uploads/2014/09/ResultadosOIAB-2012.pdf) Silver medalist.
 
 I am a jack of all trades, constantly learning about new areas so I can better interface with people. My background competing in [physics](https://ipho-unofficial.org/timeline/2012/individual), biology, linguistics, astronomy, chemistry, mathematics and informatics, together with graduating in electrical engineering, computer science and mathematics gives me a good interdisciplinary background to approach problems. 
 
