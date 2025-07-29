@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Ivan.fyi - portuguese</title>
+    <subtitle>Ivan Tadeu Ferreira Antunes Filho, software engineer in Cambridge, Massachussets, Boston Area</subtitle>
+    <link rel="self" type="application/atom+xml" href="/tags/portuguese/atom.xml"/>
+    <link rel="alternate" type="text/html" href="/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2020-09-07T00:00:00+00:00</updated>
+    <id>/tags/portuguese/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Revista Contigo</title>
+        <published>2020-07-28T00:00:00+00:00</published>
+        <updated>2020-09-07T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="/revista-contigo.html"/>
+        <id>/revista-contigo.html</id>
+        
+        <content type="html" xml:base="/revista-contigo.html">&lt;p&gt;In Portuguese, 2012 article in a celebrity magazine about me.&lt;&#x2F;p&gt;
+&lt;p&gt;Em 2012 eu apareci na &lt;a href=&quot;https:&#x2F;&#x2F;pt.wikipedia.org&#x2F;wiki&#x2F;Contigo!&quot;&gt;Revista Contigo!&lt;&#x2F;a&gt; Que era uma das principais revistas de fofoca e celebridades da época&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;.&#x2F;jpg&#x2F;Imagem_001.jpg&quot;&gt;&lt;img src=&quot;&#x2F;.&#x2F;jpg&#x2F;Imagem_001640x640.jpg&quot; alt=&quot;img&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;.&#x2F;jpg&#x2F;Imagem_002.jpg&quot;&gt;&lt;img src=&quot;&#x2F;.&#x2F;jpg&#x2F;Imagem_002640x640.jpg&quot; alt=&quot;img&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;.&#x2F;jpg&#x2F;Imagem_003.jpg&quot;&gt;&lt;img src=&quot;&#x2F;.&#x2F;jpg&#x2F;Imagem_003640x640.jpg&quot; alt=&quot;img&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;.&#x2F;jpg&#x2F;Imagem_004.jpg&quot;&gt;&lt;img src=&quot;&#x2F;.&#x2F;jpg&#x2F;Imagem_004640x640.jpg&quot; alt=&quot;img&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
