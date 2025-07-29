@@ -2,7 +2,9 @@ name: Zola on GitHub Pages
 
 on: 
  workflow_dispatch:
-
+ push:
+   branches:
+    - master
 
 jobs:
   build:
