@@ -2,12 +2,10 @@
 title: Resume
 
 date: 2018-09-09
-updated: 2022-07-22
+updated: 2025-07-22
 tags:
 template: mypages.html
 ---
-
-This resume is a bit out out-of-date.
 
 <object id='pdf' data='pdf/resume2025-july.pdf' type='application/pdf' class='pdf-viewer'>
   Your browser does not support PDF objects in HTML.<br>
