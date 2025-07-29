@@ -21,7 +21,7 @@ Master of Engineering in Computer Science, from MIT, with a degree in Computer S
 I've worked primarily in Algorithms and Performance, and secondarily in Systems and Toolchains, but I have also worked with user interfaces and data visualization tools. 
 
 Previous work includes 
-- Adding support for Thin Linking Time Optimization to Google's Android Toolchain, resulting in over $50M in savings, 5-7% smaller apps and 5% improvement in performance.
+- Adding support for Thin Link Time Optimization to Google's Android Toolchain, resulting in over $50M in savings, 5-7% smaller apps and 5% improvement in performance.
 - implementing Resource Constrained Project Scheduling algorithms from research papers and improving on them, together with implementing a UI for clients to use; 
 - modifying LLVM to make LTO more friendly for toolchains; 
 - writing queries to analyse revenue data from advertisers;
